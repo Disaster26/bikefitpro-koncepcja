@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bike fitting Mikołów - ustawienie pozycji na rowerze | BikeFitPro</title>
+<meta name="description" content="Bike fitting w BMC LAB Mikołów: ustawienie roweru do budowy ciała i mobilności, bloki, siodełko, wkładki do butów. Prowadzi inż. Krzysztof Ramczyk (Kriss), trener kolarstwa i przygotowania motorycznego.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#232120">
+<link rel="icon" type="image/png" sizes="48x48" href="foto/ikona-48.png">
+<link rel="apple-touch-icon" href="foto/ikona-192.png">
+<link rel="preload" href="fonts/bc700-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/b400-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" media="(max-width:760px)" imagesrcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-800.webp 800w, foto/hero-m-960.webp 960w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" media="(min-width:761px)" imagesrcset="foto/hero-d-960.webp 960w, foto/hero-d-1280.webp 1280w, foto/hero-d-1600.webp 1600w, foto/hero-d-1820.webp 1820w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:BC;src:url(fonts/bc700-rdzen.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00BB,U+00D3,U+00F3,U+2013,U+2019,U+201D,U+201E,U+2026,U+00B7,U+00D7,U+00B0}
+@font-face{font-family:BC;src:url(fonts/bc700-pl.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:B;src:url(fonts/b400-rdzen.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00BB,U+00D3,U+00F3,U+2013,U+2019,U+201D,U+201E,U+2026,U+00B7,U+00D7,U+00B0}
+@font-face{font-family:B;src:url(fonts/b400-pl.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:B;src:url(fonts/b600-rdzen.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00BB,U+00D3,U+00F3,U+2013,U+2019,U+201D,U+201E,U+2026,U+00B7,U+00D7,U+00B0}
+@font-face{font-family:B;src:url(fonts/b600-pl.woff2) format("woff2");font-weight:600;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:BCf;src:local("Arial Narrow Bold"),local("ArialNarrow-Bold"),local("Roboto Condensed Bold"),local("Arial Bold");font-weight:700;size-adjust:96%}
+@font-face{font-family:Bf;src:local("Arial"),local("ArialMT"),local("Roboto");font-weight:400;size-adjust:95%}
+@font-face{font-family:Bf;src:local("Arial Bold"),local("Arial-BoldMT"),local("Roboto Bold");font-weight:600;size-adjust:93%}
+:root{--or:#EF7F1A;--or-t:#A85300;--ink:#1F1E1D;--gr:#2B2A29;--mut:#55534F;--line:#DCDEE2;--bg2:#F1F2F4;--dark:#232120;--foot:#1A1918;--pad:clamp(16px,4vw,64px);--max:1720px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:68px}
+body{margin:0;background:#fff;color:var(--ink);font:400 18px/1.6 B,Bf,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--or-t)}
+h1,h2,h3{font-family:BC,BCf,sans-serif;font-weight:700;line-height:1.04;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(36px,4.4vw,68px);color:var(--ink)}
+h3{font-size:clamp(25px,2vw,30px)}
+p{margin:0 0 1em}
+.w{width:min(100% - 2*var(--pad),var(--max));margin-inline:auto}
+/* miarka: skala z goniometru (krotkie kreski co 10 px, dlugie co 50 px) */
+.miarka{display:block;height:12px;border:0;margin:0;background:linear-gradient(var(--or),var(--or)) left bottom/100% 2px no-repeat,repeating-linear-gradient(90deg,var(--or) 0 2px,transparent 2px 10px) left bottom/100% 6px no-repeat,repeating-linear-gradient(90deg,var(--or) 0 2px,transparent 2px 50px) left bottom/100% 12px no-repeat}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 28px;background:var(--or);color:var(--ink);font:700 21px/1 BC,BCf,sans-serif;letter-spacing:.01em;text-decoration:none;border:0;border-radius:0;cursor:pointer;clip-path:polygon(0 0,100% 0,100% calc(100% - 12px),calc(100% - 12px) 100%,0 100%)}
+.btn:hover{background:#FF9433}
+.btn svg{width:20px;height:20px;flex:none}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px;z-index:99}.skip:focus{left:8px}
+/* naglowek */
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--line);height:65px}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{width:auto;height:44px}
+.menu{display:flex;align-items:center;gap:clamp(16px,2.2vw,40px)}
+.menu a{color:var(--ink);text-decoration:none;font:700 19px/1 BC,BCf,sans-serif;letter-spacing:.01em;padding:10px 0 9px;background:none}
+.menu a:hover{color:var(--or-t)}
+.menu a.on{background:linear-gradient(var(--or),var(--or)) left bottom/100% 2px no-repeat,repeating-linear-gradient(90deg,var(--or) 0 2px,transparent 2px 8px) left bottom/100% 6px no-repeat}
+.menu .btn{min-height:46px;padding:0 20px;font-size:19px;color:var(--ink);background:var(--or)}
+.menu .btn:hover{background:#FF9433;color:var(--ink)}
+.tel-m,.burger,.acts{display:none}
+@media (max-width:1020px){
+ .menu{position:fixed;inset:64px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px var(--pad) 24px;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(20,20,20,.12);transform:translateY(-120%);visibility:hidden;transition:transform .25s ease,visibility 0s .25s}
+ .top.open .menu{transform:none;visibility:visible;transition:transform .25s ease}
+ .menu a{padding:16px 0;font-size:22px;border-bottom:1px solid var(--line)}
+ .menu a.on{background:none;box-shadow:inset 4px 0 0 var(--or);padding-left:14px}
+ .menu .btn{margin-top:18px;justify-content:center;min-height:56px;border:0}
+ .tel-m,.burger{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+ .tel-m{background:var(--or);border-color:var(--or)}
+ .tel-m svg{width:22px;height:22px}
+ .acts{display:flex;gap:8px}
+ .burger i,.burger i:before,.burger i:after{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:transform .2s}
+ .burger i:before,.burger i:after{content:"";position:absolute;left:0}
+ .burger i:before{top:-6px}.burger i:after{top:6px}
+ .top.open .burger i{background:transparent}.top.open .burger i:before{transform:translateY(6px) rotate(45deg)}.top.open .burger i:after{transform:translateY(-6px) rotate(-45deg)}
+}
+@media (max-width:370px){.logo img{height:38px}}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 65px);display:flex;flex-direction:column;justify-content:center;color:#fff;background:var(--dark);overflow:hidden}
+.hero .foto{position:absolute;inset:0}
+.hero .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 35%}
+.hero .foto:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,27,26,.92) 0,rgba(28,27,26,.8) 32%,rgba(28,27,26,.3) 54%,rgba(28,27,26,0) 68%)}
+.hero .in{position:relative;z-index:2;padding:56px 0 76px}
+.hero h1{font-size:clamp(46px,4.4vw,84px);max-width:calc(52vw - (100vw - min(100vw - 2*var(--pad),var(--max)))/2);line-height:.98}
+.hero .lead{margin:24px 0 32px;max-width:36ch;font-size:clamp(18px,1.15vw,25px);line-height:1.5;color:#ECEAE7}
+.hero .alt{margin:18px 0 0;font-size:16px;color:#D6D3CF;max-width:44ch}
+.hero .miarka{position:absolute;left:0;right:0;bottom:22px;z-index:2}
+@media (max-width:760px){
+ .hero{justify-content:flex-start}
+ .hero .foto{position:relative;inset:auto;flex:1 1 0;min-height:min(70vw,32svh);max-height:56svh;align-self:stretch;width:100%}
+ .hero .foto img{object-position:50% 40%}
+ .hero .foto:after{background:linear-gradient(180deg,rgba(35,33,32,0) 62%,var(--dark) 100%)}
+ .hero .in{flex:0 0 auto;padding:4px 0 46px}
+ .hero h1{font-size:clamp(36px,10.4vw,46px);max-width:none}
+ .hero .lead{margin:12px 0 24px;font-size:16.5px}
+ .hero .btn{width:100%;justify-content:center}
+ .hero .alt{font-size:14.5px;margin-top:12px}
+ .hero .miarka{bottom:16px}
+}
+@media (max-width:760px) and (max-height:700px){.hero h1{font-size:clamp(32px,9.2vw,38px)}.hero .lead{font-size:15.5px;margin:10px 0 24px}.hero .in{padding-bottom:40px}}
+/* sekcje */
+.sec{padding:clamp(60px,8vw,120px) 0}
+.sec.g{background:var(--bg2)}
+.lead{font-size:clamp(18px,1.4vw,21px);color:var(--mut);max-width:62ch;margin:18px 0 0}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 40px;margin-bottom:clamp(28px,4vw,52px)}
+/* fitting */
+.fit{display:grid;grid-template-columns:1fr;gap:clamp(36px,5vw,96px);align-items:center}
+@media (min-width:980px){.fit{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.fit .txt p{color:var(--mut);max-width:62ch}
+.fit .txt .lead{margin-bottom:22px}
+.boli{list-style:none;margin:30px 0 26px;padding:0;display:flex;flex-wrap:wrap;gap:6px 0}
+.boli li{font:700 clamp(30px,3.2vw,48px)/1 BC,BCf,sans-serif;color:var(--ink);padding:0 18px 0 0;margin-right:18px;position:relative}
+.boli li:after{content:"";position:absolute;right:0;top:12%;bottom:12%;width:2px;background:var(--or);transform:skewX(-18deg)}
+.boli li:last-child:after{display:none}
+.boli-p{font-size:clamp(18px,1.35vw,20px);color:var(--ink)!important}
+.fit figure{margin:0;position:relative}
+.fit figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.fit figcaption{font-size:15px;color:var(--mut);margin-top:10px}
+.kompromis{margin-top:clamp(36px,4vw,56px);padding-top:26px;position:relative;font:700 clamp(26px,2.4vw,38px)/1.18 BC,BCf,sans-serif;max-width:34ch;color:var(--ink)}
+.kompromis .miarka{position:absolute;top:0;left:0;width:200px}
+/* proces */
+.proc{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,80px);align-items:start}
+@media (min-width:1080px){.proc{grid-template-columns:minmax(300px,.62fr) minmax(0,1.38fr)}}
+.kroki{list-style:none;margin:0;padding:0 0 0 30px;position:relative;counter-reset:k}
+.kroki:before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:12px;background:linear-gradient(var(--or),var(--or)) left top/2px 100% no-repeat,repeating-linear-gradient(180deg,var(--or) 0 2px,transparent 2px 12px) left top/7px 100% no-repeat}
+.kroki li{position:relative;padding:0 0 22px}
+.kroki li:last-child{padding-bottom:0}
+.kroki li:before{content:"";position:absolute;left:-30px;top:13px;width:22px;height:2px;background:var(--ink)}
+.kroki b{display:block;font:700 26px/1.15 BC,BCf,sans-serif;color:var(--ink);margin-bottom:4px}
+.kroki span{color:var(--mut);font-size:17px;display:block;max-width:44ch}
+.galw{min-width:0}
+.galw .head{margin-bottom:18px}
+.galw .head p{margin:0;color:var(--mut)}
+.navb{display:flex;gap:8px}
+.navb button{width:50px;height:50px;border:1px solid #B9BDC4;background:#fff;cursor:pointer;color:var(--ink);font-size:22px;line-height:1}
+.navb button:hover{border-color:var(--ink)}
+.tor{display:grid;grid-auto-flow:column;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor>*{scroll-snap-align:start}
+.tor.drag{scroll-snap-type:none;cursor:grabbing}.tor.drag *{pointer-events:none}
+img[data-src]{background:#E1E3E6}
+.tor.kad{grid-auto-columns:min(80vw,460px)}
+@media (min-width:1080px){.tor.kad{grid-auto-columns:calc((100% - 16px)/1.55)}}
+@media (min-width:1900px){.tor.kad{grid-auto-columns:calc((100% - 32px)/2.15)}}
+.kad figure{margin:0}
+.kad button{display:block;width:100%;padding:0;border:0;background:#E1E3E6;cursor:zoom-in;overflow:hidden}
+.kad img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s}
+.kad button:hover img{transform:scale(1.03)}
+.kad figcaption{font-size:16px;color:var(--ink);padding:12px 0 0;font-weight:600}
+.kad figcaption small{display:block;font-weight:400;color:var(--mut);font-size:15px}
+/* uslugi */
+.usl{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,80px);align-items:start}
+@media (min-width:1080px){.usl{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr)}}
+.usl figure{margin:0}
+.usl figure img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.usl figcaption{font-size:15px;color:var(--mut);margin-top:10px}
+.of{display:grid;grid-template-columns:1fr;gap:36px clamp(28px,3vw,56px)}
+@media (min-width:640px){.of{grid-template-columns:1fr 1fr}}
+.of .miarka{width:100px;margin-bottom:18px}
+.of h3{margin-bottom:8px}
+.of p{color:var(--mut);margin:0}
+/* o mnie */
+.ciem{background:var(--dark);color:#E3E0DC}
+.ciem h2,.ciem h3{color:#fff}
+.om{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,88px);align-items:start}
+@media (min-width:980px){.om{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr)}}
+.om .fot{margin:0;position:relative}
+.om .fot img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.om .fot figcaption{font-size:14.5px;color:#ADA8A2;margin-top:10px}
+.rola{color:var(--or);font:700 24px/1.2 BC,BCf,sans-serif;margin:10px 0 22px}
+.om .opis{font-size:clamp(18px,1.35vw,20px);max-width:62ch}
+.kw{display:grid;grid-template-columns:1fr;gap:0 48px;margin:28px 0 0;padding:0;list-style:none}
+@media (min-width:700px){.kw{grid-template-columns:1fr 1fr}}
+.kw li{padding:12px 0 12px 26px;position:relative;border-bottom:1px solid #3A3836}
+.kw li:before{content:"";position:absolute;left:0;top:24px;width:14px;height:2px;background:var(--or)}
+.kursy{margin-top:clamp(36px,4vw,56px)}
+.kursy h3{font-size:26px;margin-bottom:12px}
+.kursy dl{display:grid;grid-template-columns:minmax(0,auto) minmax(0,1fr);gap:10px 28px;margin:0}
+.kursy dt{color:#fff;font-weight:600}
+.kursy dd{margin:0;color:#C8C4BF}
+@media (max-width:600px){.kursy dl{grid-template-columns:1fr;gap:2px}.kursy dd{margin-bottom:12px}}
+.team{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px 28px;align-items:center;margin-top:clamp(40px,5vw,64px);padding-top:30px;position:relative}
+.team .miarka{position:absolute;top:0;left:0;right:0}
+.team img{width:clamp(96px,9vw,140px);height:auto}
+.team p{margin:0;max-width:66ch}
+.team a{color:var(--or);font-weight:600}
+@media (max-width:600px){.team{grid-template-columns:1fr}.team img{width:110px}}
+/* kontakt */
+.kon{display:grid;grid-template-columns:1fr;gap:clamp(36px,4vw,80px)}
+@media (min-width:980px){.kon{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr)}}
+.os{display:grid;gap:14px;margin:26px 0 8px}
+.os p{margin:0}
+.os a.t{display:inline-flex;align-items:center;gap:12px;font:700 clamp(34px,3vw,46px)/1 BC,BCf,sans-serif;color:var(--ink);text-decoration:none}
+.os a.t svg{width:26px;height:26px;color:var(--or-t)}
+.os a.t:hover{color:var(--or-t)}
+.mail{font-size:20px;font-weight:600}
+.adr{font-size:19px;margin-top:6px}
+.godz{margin:26px 0 0;max-width:420px}
+.godz h3{font-size:24px;margin-bottom:6px}
+.godz div{display:flex;justify-content:space-between;padding:10px 0;position:relative}
+.godz div:after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:linear-gradient(#C3C7CD,#C3C7CD) left bottom/100% 1px no-repeat,repeating-linear-gradient(90deg,#C3C7CD 0 1px,transparent 1px 10px) left bottom/100% 5px no-repeat}
+.godz b{font-weight:600}
+.lab{display:flex;align-items:center;gap:16px;margin-top:24px;color:var(--mut);font-size:15px}
+.lab img{height:52px;width:auto}
+.mapa{margin-top:26px;height:clamp(160px,15vw,220px);background:#E1E3E6;overflow:hidden;position:relative}
+.mapa button{position:absolute;inset:0;width:100%;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink);font:400 16px B,Bf,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:16px}
+.mapa button b{font:700 26px BC,BCf,sans-serif;color:var(--ink)}
+.mapa button span{font-size:14.5px;color:var(--mut)}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{background:#fff;padding:clamp(22px,3vw,44px);border-top:4px solid var(--or)}
+form h3{font-size:34px;margin-bottom:6px}
+form>p{color:var(--mut);margin-bottom:22px}
+.pola{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pola .c{grid-column:1/-1}
+@media (max-width:560px){.pola{grid-template-columns:1fr}}
+label{display:block;font-weight:600;font-size:15.5px;margin-bottom:6px}
+input,textarea,select{width:100%;font:400 17px B,Bf,sans-serif;padding:12px 14px;border:1px solid #A3A8AF;border-radius:0;background:#fff;color:var(--ink);min-height:52px}
+textarea{min-height:120px;resize:vertical}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--ink);outline-offset:0;border-color:var(--ink)}
+[aria-invalid=true]{border-color:#B3261E}
+.zg{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:14.5px;color:var(--mut)}
+.zg input{width:22px;min-height:22px;height:22px;margin:2px 0 0;flex:none;accent-color:var(--or)}
+form .btn{margin-top:22px}
+#msg{margin:16px 0 0;padding:14px 16px;background:var(--bg2);border-left:4px solid var(--or);font-weight:600}
+/* stopka */
+.stopka{background:var(--foot);color:#C8C4BF;padding:0 0 28px;font-size:16px}
+.stopka>.miarka{margin-bottom:46px}
+.fg{display:grid;grid-template-columns:1.3fr repeat(3,auto);justify-content:space-between;gap:28px 48px}
+.fg .lg img{height:60px;width:auto;margin-bottom:16px}
+.stopka b{color:#fff;display:block;margin-bottom:8px;font:700 20px BC,BCf,sans-serif}
+.stopka a{color:#C8C4BF;text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka ul{list-style:none;margin:0;padding:0}.stopka li{padding:3px 0}
+.dol{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px;margin-top:38px;padding-top:20px;border-top:1px solid #34312F;font-size:14px;color:#AAA59F}
+@media (max-width:860px){.fg{grid-template-columns:1fr 1fr}.fg>div:first-child{grid-column:1/-1}}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(16,15,14,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb figure{margin:0;max-width:94vw;max-height:88vh;display:flex;flex-direction:column;align-items:center}
+.lb img{max-width:94vw;max-height:80vh;width:auto;height:auto;object-fit:contain}
+.lb figcaption{color:#E2DFDB;font-size:15px;margin-top:10px;text-align:center}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:52px;height:52px;font-size:26px;cursor:pointer}
+.lb .x{top:14px;right:14px}.lb .p{left:12px;top:50%;margin-top:-26px}.lb .n{right:12px;top:50%;margin-top:-26px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#fitting">Przejdź do treści</a>
+<header class="top" id="top">
+ <div class="w">
+  <a class="logo" href="#start" aria-label="BikeFitPro - strona główna"><img src="foto/logo-80.webp" width="262" height="80" alt="BikeFitPro"></a>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#fitting">Bike fitting</a>
+   <a href="#proces">Jak przebiega</a>
+   <a href="#uslugi">Usługi</a>
+   <a href="#o-mnie">O mnie</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="btn" href="tel:+48728420803"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>728 420 803</a>
+  </nav>
+  <div class="acts"><a class="tel-m" href="tel:+48728420803" aria-label="Zadzwoń: 728 420 803"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg></a><button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><i></i></button></div>
+ </div>
+</header>
+<main>
+<section class="hero" id="start">
+ <div class="foto"><picture><source media="(max-width:760px)" srcset="foto/hero-m-480.webp 480w, foto/hero-m-640.webp 640w, foto/hero-m-800.webp 800w, foto/hero-m-960.webp 960w" sizes="100vw"><img src="foto/hero-d-1600.webp" srcset="foto/hero-d-960.webp 960w, foto/hero-d-1280.webp 1280w, foto/hero-d-1600.webp 1600w, foto/hero-d-1820.webp 1820w" sizes="100vw" width="1600" height="1068" fetchpriority="high" alt="Pomiar kąta zgięcia kolana goniometrem podczas bike fittingu"></picture></div>
+ <div class="w in">
+  <h1>Bike fitting w&nbsp;Mikołowie&nbsp;- rower ustawiony pod Twoje ciało</h1>
+  <p class="lead">Jazda na rowerze nie powinna boleć: ani kolan, ani pleców, szyi, bioder czy ramion. Dopasuję ustawienia roweru do Twojej budowy i mobilności.</p>
+  <a class="btn" href="tel:+48728420803"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>Zadzwoń: 728 420 803</a>
+  <p class="alt">inż. Krzysztof Ramczyk (Kriss) · BMC LAB Mikołów</p>
+ </div>
+ <span class="miarka" aria-hidden="true"></span>
+</section>
+
+<section class="sec" id="fitting">
+ <div class="w">
+  <div class="fit">
+   <div class="txt">
+    <h2>Na czym polega bike fitting</h2>
+    <p class="lead">Fitting to dobór indywidualnych ustawień roweru do budowy anatomicznej i mobilności kolarza. Łączy anatomię, fizjologię, biomechanikę ruchu, fizykę i znajomość potrzeb danego typu kolarstwa.</p>
+    <p>Dobra pozycja to klucz do efektywnej i wydajnej jazdy, z zachowaniem komfortu i bezpieczeństwa dla narządu ruchu. Celem jest wyeliminowanie bólów i dolegliwości, które pojawiają się przy dłuższej jeździe:</p>
+    <ul class="boli" aria-label="Najczęstsze dolegliwości"><li>Kolana</li><li>Plecy</li><li>Szyja</li><li>Biodra</li><li>Ramiona</li></ul>
+    <p class="boli-p">Te bóle wynikają najczęściej z braku przygotowania siłowo-motorycznego albo ze złego ustawienia roweru. W studiu znajdziemy rozwiązanie na oba problemy.</p>
+    <p class="kompromis"><span class="miarka" aria-hidden="true"></span>Fitting to kompromis między mobilnością i możliwościami ciała a jak najbardziej wydajną pozycją podczas jazdy.</p>
+   </div>
+   <figure><img data-src="foto/p-aero-800.webp" data-srcset="foto/p-aero-480.webp 480w, foto/p-aero-800.webp 800w, foto/p-aero-1200.webp 1200w" sizes="(max-width:979px) 92vw, 46vw" width="800" height="600" decoding="async" alt="Kolarka w pozycji czasowej na lemondce, widok z przodu"><figcaption>Kontrola pozycji czasowej w studiu BMC LAB Mikołów</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec g" id="proces">
+ <div class="w">
+  <div class="head"><div><h2>Jak przebiega fitting</h2>
+  <p class="lead">Od rozmowy do diagnozy, w studiu BMC LAB w Mikołowie.</p></div></div>
+  <div class="proc">
+   <ol class="kroki">
+    <li><b>Wywiad</b><span>Jak i ile jeździsz, jaki masz cel i co dolega.</span></li>
+    <li><b>Testy diagnostyczne</b><span>Sprawdzenie mobilności i możliwości ciała.</span></li>
+    <li><b>Ustawienie bloków</b><span>Pozycja buta na pedale.</span></li>
+    <li><b>Ustawienie roweru</b><span>Pomiary i regulacja pozycji na trenażerze.</span></li>
+    <li><b>Dobór siodełka</b><span>Siodełko dopasowane do Ciebie i Twojej pozycji.</span></li>
+    <li><b>Diagnoza</b><span>Czy ustawienie jest optymalne, czy potrzebne są ćwiczenia poprawiające mobilność, żeby uzyskać jeszcze wydajniejszą pozycję.</span></li>
+   </ol>
+   <div class="galw">
+    <div class="head"><p>Z fittingu w studiu. Kliknij zdjęcie, żeby je powiększyć.</p>
+    <div class="navb" data-nav="tk"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcie">&#8592;</button><button type="button" data-k="1" aria-label="Następne zdjęcie">&#8594;</button></div></div>
+    <div class="tor kad" id="tk" data-tor><figure><button type="button" data-lb="kadry" data-src="foto/p-wywiad-1200.webp" data-cap="Wywiad: Rozmowa i omówienie anatomii"><img data-src="foto/p-wywiad-800.webp" data-srcset="foto/p-wywiad-480.webp 480w, foto/p-wywiad-800.webp 800w, foto/p-wywiad-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="Rozmowa i omówienie anatomii"></button><figcaption>Wywiad<small>Rozmowa i omówienie anatomii</small></figcaption></figure><figure><button type="button" data-lb="kadry" data-src="foto/p-testy-1200.webp" data-cap="Testy diagnostyczne: Sprawdzenie mobilności"><img data-src="foto/p-testy-800.webp" data-srcset="foto/p-testy-480.webp 480w, foto/p-testy-800.webp 800w, foto/p-testy-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="Sprawdzenie mobilności"></button><figcaption>Testy diagnostyczne<small>Sprawdzenie mobilności</small></figcaption></figure><figure><button type="button" data-lb="kadry" data-src="foto/p-bloki-1200.webp" data-cap="Ustawienie bloków: Pomiar pozycji buta"><img data-src="foto/p-bloki-800.webp" data-srcset="foto/p-bloki-480.webp 480w, foto/p-bloki-800.webp 800w, foto/p-bloki-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="Pomiar pozycji buta"></button><figcaption>Ustawienie bloków<small>Pomiar pozycji buta</small></figcaption></figure><figure><button type="button" data-lb="kadry" data-src="foto/p-pedal-1200.webp" data-cap="Ustawienie bloków: But na pedale w linii lasera"><img data-src="foto/p-pedal-800.webp" data-srcset="foto/p-pedal-480.webp 480w, foto/p-pedal-800.webp 800w, foto/p-pedal-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="But na pedale w linii lasera"></button><figcaption>Ustawienie bloków<small>But na pedale w linii lasera</small></figcaption></figure><figure><button type="button" data-lb="kadry" data-src="foto/p-rower-1200.webp" data-cap="Ustawienie roweru: Pomiar wysokości siodła"><img data-src="foto/p-rower-800.webp" data-srcset="foto/p-rower-480.webp 480w, foto/p-rower-800.webp 800w, foto/p-rower-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="Pomiar wysokości siodła"></button><figcaption>Ustawienie roweru<small>Pomiar wysokości siodła</small></figcaption></figure><figure><button type="button" data-lb="kadry" data-src="foto/p-nagranie-1200.webp" data-cap="Ustawienie roweru: Nagranie pozycji na trenażerze"><img data-src="foto/p-nagranie-800.webp" data-srcset="foto/p-nagranie-480.webp 480w, foto/p-nagranie-800.webp 800w, foto/p-nagranie-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="Nagranie pozycji na trenażerze"></button><figcaption>Ustawienie roweru<small>Nagranie pozycji na trenażerze</small></figcaption></figure><figure><button type="button" data-lb="kadry" data-src="foto/p-diagnoza-1200.webp" data-cap="Diagnoza: Omówienie wyników z kolarką"><img data-src="foto/p-diagnoza-800.webp" data-srcset="foto/p-diagnoza-480.webp 480w, foto/p-diagnoza-800.webp 800w, foto/p-diagnoza-1200.webp 1200w" sizes="(max-width:1079px) 80vw, (min-width:1900px) 40vw, 54vw" width="800" height="600" decoding="async" alt="Omówienie wyników z kolarką"></button><figcaption>Diagnoza<small>Omówienie wyników z kolarką</small></figcaption></figure></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="uslugi">
+ <div class="w">
+  <div class="head"><div><h2>Nie tylko fitting</h2>
+  <p class="lead">Ustawiona pozycja to początek. Pomagam też w treningu, sprzęcie i przygotowaniu ciała do jazdy.</p></div></div>
+  <div class="usl">
+   <figure><img data-src="foto/studio-1000.webp" data-srcset="foto/studio-640.webp 640w, foto/studio-1000.webp 1000w, foto/studio-1440.webp 1440w" sizes="(max-width:1079px) 92vw, 44vw" width="1000" height="565" decoding="async" alt="Rower czasowy na trenażerze w studiu fittingu"><figcaption>Studio w BMC LAB Mikołów, ul. Józefa Wieczorka 11</figcaption></figure>
+   <div class="of">
+    <div><span class="miarka" aria-hidden="true"></span><h3>Wkładki do butów</h3><p>Indywidualne wkładki dla rowerzystów, kolarzy, biegaczy i do codziennego chodzenia.</p></div>
+    <div><span class="miarka" aria-hidden="true"></span><h3>Doradztwo</h3><p>W sprawach rowerowych, indywidualnego treningu i doboru sprzętu.</p></div>
+    <div><span class="miarka" aria-hidden="true"></span><h3>Treningi</h3><p>Cotygodniowe treningi w Old Mine. Zapraszam.</p></div>
+    <div><span class="miarka" aria-hidden="true"></span><h3>Szkolenia indoor cycling</h3><p>Szkolenia w klubach sportowych, także jako szkoleniowiec programu „Power Cycling” w Rockfit Academy.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec ciem" id="o-mnie">
+ <div class="w">
+  <div class="om">
+   <figure class="fot"><img data-src="foto/kriss-640.webp" data-srcset="foto/kriss-400.webp 400w, foto/kriss-640.webp 640w, foto/kriss-900.webp 900w" sizes="(max-width:979px) 92vw, 34vw" width="640" height="800" decoding="async" alt="Krzysztof Ramczyk w koszulce BMC"><figcaption>inż. Krzysztof Ramczyk w studiu</figcaption></figure>
+   <div>
+    <h2>inż. Krzysztof Ramczyk (Kriss)</h2>
+    <p class="rola">Trener i bike fitter, na Śląsku i na Facebooku znany jako Kriss Trainer</p>
+    <p class="opis">W pracy łączę pasję do kolarstwa z wiedzą z przygotowania motorycznego, siłowego i wytrzymałościowego, anatomii, fizjoterapii, biomechaniki, fizjologii wysiłku i treningu kolarskiego oraz dyplomem inżyniera.</p>
+    <ul class="kw">
+     <li>Trener przygotowania motorycznego</li>
+     <li>Trener kolarstwa i trener medyczny</li>
+     <li>Instruktor cycling, szkoleniowiec „Power Cycling” w Rockfit Academy</li>
+     <li>Kurs bike fittera u Jarosława Dymka, jednego z pierwszych bike fitterów w Polsce</li>
+     <li>Doradca z dietetyki i suplementacji w sporcie</li>
+     <li>Fitting w studiu BMC LAB Mikołów</li>
+    </ul>
+    <div class="kursy">
+     <h3>Gdzie się uczyłem</h3>
+     <dl>
+      <dt>Przygotowanie motoryczne</dt><dd>Train Movement Academy, Elite Training Academy</dd>
+      <dt>Metodyka treningu</dt><dd>Maciej Bielski, Wojtek Jusiel</dd>
+      <dt>Anatomia funkcjonalna i fizjologia</dt><dd>Mauricz Training Center</dd>
+      <dt>Fizjoterapia</dt><dd>dr Ryszard Biernat</dd>
+      <dt>Dietetyka i suplementacja</dt><dd>Jakub Mauricz</dd>
+     </dl>
+    </div>
+   </div>
+  </div>
+  <div class="team"><span class="miarka" aria-hidden="true"></span>
+   <img data-src="foto/kct-160.webp" width="183" height="160" alt="Logo Kriss Cycling Team">
+   <p>Założyłem Sobotnią Grupę Kolarską, jedną z największych ustawek szosowych na Śląsku, oraz Kriss Cycling Team, grupę kolarzy amatorów z całej Polski startujących w lokalnych zawodach. <a href="https://www.facebook.com/kriss.trainer.77" rel="noopener">Kriss Trainer na Facebooku</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="sec g" id="kontakt">
+ <div class="w kon">
+  <div>
+   <h2>Umów wizytę</h2>
+   <div class="os">
+    <p><a class="t" href="tel:+48728420803"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>728 420 803</a></p>
+    <p><a class="mail" href="mailto:kriss@bikefitpro.pl">kriss@bikefitpro.pl</a></p>
+    <p class="adr"><b>BMC LAB Mikołów</b><br>ul. Józefa Wieczorka 11, 43-190 Mikołów</p>
+   </div>
+   <div class="godz"><h3>Kiedy przyjmuję</h3>
+    <div><b>Poniedziałek</b><span>12:00 - 18:00</span></div>
+    <div><b>Wtorek</b><span>13:00 - 17:00</span></div>
+    <div><b>Środa</b><span>12:00 - 18:00</span></div>
+    <div><b>Piątek</b><span>12:00 - 18:00</span></div>
+   </div>
+   <div class="lab"><img data-src="foto/bmclab-96.webp" width="195" height="96" alt="Recommended BMC LAB Mikołów"><span>Fitting w rekomendowanym studiu BMC LAB Mikołów</span></div>
+   <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=J%C3%B3zefa+Wieczorka+11,+43-190+Miko%C5%82%C3%B3w&amp;output=embed"><button type="button" id="pokaz-mape"><b>Pokaż mapę dojazdu</b>ul. Józefa Wieczorka 11, Mikołów<span>Kliknięcie wczyta mapę Google</span></button></div>
+  </div>
+  <form id="form" novalidate>
+   <h3>Prośba o termin fittingu</h3>
+   <p>Napisz, na czym jeździsz i co chcesz poprawić. Oddzwonię i zaproponuję termin.</p>
+   <div class="pola">
+    <div><label for="f1">Imię</label><input id="f1" name="imie" autocomplete="given-name" required></div>
+    <div><label for="f2">Telefon</label><input id="f2" name="tel" type="tel" autocomplete="tel" required></div>
+    <div><label for="f3">E-mail</label><input id="f3" name="email" type="email" autocomplete="email"></div>
+    <div><label for="f4">Rower</label><select id="f4" name="rower"><option>Szosa</option><option>Gravel</option><option>MTB</option><option>Czasówka / triathlon</option><option>Trekking / miejski</option><option>Inny</option></select></div>
+    <div class="c"><label for="f5">Czego dotyczy wizyta</label><select id="f5" name="rodzaj"><option>Bike fitting</option><option>Wkładki do butów</option><option>Doradztwo, dobór sprzętu</option><option>Trening</option><option>Inne</option></select></div>
+    <div class="c"><label for="f6">Co dolega lub co chcesz poprawić</label><textarea id="f6" name="tresc"></textarea></div>
+    <div class="c"><label class="zg"><input type="checkbox" required> Zgadzam się na kontakt w sprawie zapytania. Szczegóły w polityce prywatności.</label></div>
+   </div>
+   <button class="btn" type="submit">Wyślij prośbę o termin</button>
+   <p id="msg" hidden>To podgląd strony: formularz zacznie wysyłać zgłoszenia po wdrożeniu. Na razie zapraszam do kontaktu telefonicznego: 728 420 803.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <span class="miarka" aria-hidden="true"></span>
+ <div class="w">
+  <div class="fg">
+   <div class="lg"><img data-src="foto/logo-w-96.webp" width="314" height="96" alt="BikeFitPro"><br>Bike fitting, wkładki do butów i trening kolarski.<br>BMC LAB Mikołów, ul. Józefa Wieczorka 11, 43-190 Mikołów</div>
+   <div><b>Fitting</b><ul><li><a href="#fitting">Bike fitting</a></li><li><a href="#proces">Jak przebiega</a></li><li><a href="#uslugi">Usługi</a></li></ul></div>
+   <div><b>BikeFitPro</b><ul><li><a href="#o-mnie">O mnie</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="https://www.facebook.com/kriss.trainer.77" rel="noopener">Facebook</a></li></ul></div>
+   <div><b>Kontakt</b><ul><li><a href="tel:+48728420803">728 420 803</a></li><li><a href="mailto:kriss@bikefitpro.pl">kriss@bikefitpro.pl</a></li></ul></div>
+  </div>
+  <div class="dol"><span>© <span id="rok">2026</span> BikeFitPro · Polityka prywatności</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=bikefitpro.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie"><figure><img alt=""><figcaption></figcaption></figure><button class="x" type="button" aria-label="Zamknij">&#215;</button><button class="p" type="button" aria-label="Poprzednie">&#8592;</button><button class="n" type="button" aria-label="Następne">&#8594;</button></div>
+<script src="app.js" defer></script>
+</body>
+</html>
